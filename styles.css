@@ -79,18 +79,23 @@ h1 {
 }
 
 #login-btn,
-#account-btn {
+.purple-btn {
     padding: 10px;
     border-radius: 10px;
     display: inline-block;
     margin: 10px;
 }
 
-#account-btn {
+.purple-btn {
     background: linear-gradient(var(--dark-blurple), var(--dark-blurple)) padding-box,
         linear-gradient(to right, darkblue, darkorchid) border-box;
     border-radius: 10px;
     border: 1px solid transparent;
+    box-shadow: inset 0 1px 0 hsla(0, 0%, 100%, 0.15), 
+    0 1px 3px hsla(250, 84%, 38%, 0.25), 
+    0 2px 6px hsla(250, 84%, 38%, 0.1), 
+    0 6px 10px -2px hsla(250, 84%, 38%, 0.25);
+    
 }
 
 .btn-gradient {
@@ -126,6 +131,10 @@ h1 {
     align-items: center;
 }
 
+h4 {
+    font-size: 1.375rem;
+}
+
 
 
 /* -------------------------------- 
@@ -159,32 +168,6 @@ Buttons
     transform: translateY(2px);
   }
   
-  .cd-btn--primary {
-    background: hsl(250, 84%, 54%);
-    box-shadow: inset 0 1px 0 hsla(0, 0%, 100%, 0.15), 
-                0 1px 3px hsla(250, 84%, 38%, 0.25), 
-                0 2px 6px hsla(250, 84%, 38%, 0.1), 
-                0 6px 10px -2px hsla(250, 84%, 38%, 0.25);
-    color: hsl(0, 0%, 100%);
-  }
-  
-  .cd-btn--primary:hover {
-    background: hsl(250, 84%, 60%);
-    box-shadow: inset 0 1px 0 hsla(0, 0%, 100%, 0.15), 
-                0 1px 2px hsla(250, 84%, 38%, 0.25), 
-                0 1px 4px hsla(250, 84%, 38%, 0.1), 
-                0 3px 6px -2px hsla(250, 84%, 38%, 0.25);
-  }
-  
-  .cd-btn--primary:focus-visible {
-    box-shadow: inset 0 1px 0 hsla(0, 0%, 100%, 0.15), 
-                0 1px 2px hsla(250, 84%, 38%, 0.25), 
-                0 1px 4px hsla(250, 84%, 38%, 0.1), 
-                0 3px 6px -2px hsla(250, 84%, 38%, 0.25), 
-                0 0 0 2px hsl(0, 0%, 100%), 
-                0 0 0 4px hsl(250, 84%, 54%);
-  }
-  
   /* -------------------------------- 
   
   Icons 
@@ -216,7 +199,7 @@ Buttons
   -------------------------------- */
   
   .card {
-    background-color: hsl(0, 0%, 100%);
+    background-color: hsla(0, 0%, 0%, 0.11);
     box-shadow: 0 0 0 1px hsla(230, 13%, 9%, 0.05),
                 0 0.3px 0.4px hsla(230, 13%, 9%, 0.02),
                 0 0.9px 1.5px hsla(230, 13%, 9%, 0.045),
@@ -224,6 +207,7 @@ Buttons
     border-radius: 0.375em;
     overflow: hidden;
     width: 50%;
+    color: white;
   }
   
   .card__img-wrapper img {
@@ -239,7 +223,7 @@ Buttons
   
   .card__description {
     font-size: 0.9375rem;
-    color: hsl(225, 4%, 47%);
+    color: hsl(0, 0%, 100%);
   }
   
   .card__btn {
